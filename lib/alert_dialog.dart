@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 enum DialogsAction { yes, cancel }
 
 class AlertDialogs {
-  Future<DialogsAction> yesCancelDialog(
+  static Future<DialogsAction> yesCancelDialog(
       BuildContext context, String title, String body) async {
     final action = await showDialog(
         context: context,
